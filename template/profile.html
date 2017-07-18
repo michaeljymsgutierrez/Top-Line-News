@@ -1,0 +1,38 @@
+<div ng-repeat="x in cnnData" style="background-color: white;"> 
+	<br/>
+	<div class="f-card" style="background-color: white;">
+
+	  <div class="header">
+	    <div class="options">
+	    	<i class="fa fa-chevron-down"></i>
+	    </div>
+	    <img class="co-logo" src="./img/icon.png" />
+	    <div class="co-name">
+	    	<a href="#"> {{ x.author }}</a>
+	    </div>
+	  </div>
+
+	  <div class="content">
+	    <p>"{{ x.description }}" <br/> 
+	    	<a href="{{ x.url }}" target="_blank"> See More </a> 
+	    </p>
+	  </div>
+
+	  <div class="reference">
+	    <img class="reference-thumb" ng-src="{{ x.urlToImage}}"/>
+	    <div class="reference-content">
+	      <div class="reference-title">{{ x.title }} </div>
+	    </div>
+	  </div>
+
+	  <div class="social">
+	    <div class="social-content"></div>
+	    <div class="social-buttons">
+	      <span><i class="fa fa-thumbs-up"></i>Like</span>
+	      <span><i class="fa fa-comment"></i>Comment</span>
+	      <span><i class="fa fa-share"></i>Share</span></div>
+	  </div>
+
+	</div>
+	<br/>
+</div>

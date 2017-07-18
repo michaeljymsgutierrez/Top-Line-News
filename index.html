@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="electronApp">
+	<head>
+
+		<title>Top Line News - Powered by Electron </title>
+
+	    <meta charset="utf-8">
+
+	    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+	    <!-- custom styling -->
+	    <link href="./css/style.css" rel="stylesheet"></link>
+
+	    <!-- custom styling -->
+	    <!-- <link href="./css/ionic.min.css" rel="stylesheet"></link> -->
+
+	    <!-- angularjs library -->
+	    <script src="./lib/angular.min.js"></script>
+
+	    <!-- angular route library -->
+	    <script src="./lib/angular-route.min.js"></script>
+
+	    <!-- main application -->
+	    <script src="./js/app.js"></script>
+
+	    <!-- main application -->
+	    <script src="./js/state.js"></script>
+
+	</head>
+
+	<!-- Main Body -->
+	<body>
+
+		<div class="parent-tab" ng-controller="mainCtrl" style="position: fixed;top: 0;padding-top: 4px;">
+			<a class="tab1" ng-class="{'active-tab': tab1Stat}" ng-click="tabSwitcher('1')" href="#/">Google Top Line News</a>
+			<a class="tab2" ng-class="{'active-tab': tab2Stat}" ng-click="tabSwitcher('2')" href="#/profile">News on CNN</a>
+		</div>
+
+		<div ng-view style="margin-top: 80px;"></div>
+
+	</body>
+	
+</html>
