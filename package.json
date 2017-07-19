@@ -1,12 +1,15 @@
 {
-  "name": "News",
+  "name": "TNews",
   "version": "1.0.0",
-  "description": "A sample electron application",
+  "description": "Get the top news on Google and CNN",
   "main": "main.js",
   "scripts": {
     "start": "electron main.js"
   },
-  "author": "",
+  "author": {
+    "name": "Chael Gutierrez",
+    "email": "michael@vielsoft.com"
+  },
   "license": "ISC",
   "devDependencies": {
     "electron-prebuilt": "^1.4.13"
